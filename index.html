@@ -1,195 +1,81 @@
-<html>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Даяна & Андрей | Свадебное приглашение</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Marck+Script&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Даяна & Андрей | Свадебное приглашение</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Marck+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<section class="hero">
-
-<div class="overlay"></div>
-
-<div class="hero-content">
-
-<img src="images/main.png" class="main-photo">
-
-<h1>
-Даяна
-<span>&</span>
-Андрей
-</h1>
-
-<p class="invite">
-
-Дорогие друзья!
-
-Приглашаем вас разделить с нами
-этот особенный день.
-
-</p>
-
-<a href="#info" class="button">
-Подробнее
-</a>
-
-</div>
-
-</section>
-
-<section id="info" class="info">
-
-<h2>Дата</h2>
-
-<p class="date">
-
-18 июля 2026 года
-
-</p>
-
-<h2>Время</h2>
-
-<p class="time">
-
-15:00
-
-</p>
-
-</section>
-
-<section class="location">
-
-<h2>
-
-Место проведения
-
-</h2>
-
-<p>
-
-Свердловская область
-
-г. Екатеринбург
-
-ДНП «Аэродром»
-
-Блестящая улица
-
-</p>
-
-<a target="_blank"
-class="button"
-
-href="https://yandex.ru/maps/?text=Блестящая улица ДНП Аэродром Екатеринбург">
-
-Построить маршрут
-
-</a>
-
-</section>
-
-<section class="wishes">
-
-<h2>
-
-Пожелания
-
-</h2>
-
-<p>
-
-Если хотите подарить нам ценный и нужный подарок,
-мы будем очень благодарны за вклад
-в бюджет нашей молодой семьи.
-
-</p>
-
-</section>
-
-<section class="flowers">
-
-<h2>
-
-Вместо цветов
-
-</h2>
-
-<p>
-
-Просим не обременять себя выбором цветов —
-ваше присутствие скрасит этот день
-ярче любых букетов!
-
-</p>
-
-</section>
-
-<section class="countdown">
-
-<h2>
-
-До свадьбы осталось
-
-</h2>
-
-<div id="timer">
-
-<div>
-
-<span id="days">00</span>
-
-<p>дней</p>
-
-</div>
-
-<div>
-
-<span id="hours">00</span>
-
-<p>часов</p>
-
-</div>
-
-<div>
-
-<span id="minutes">00</span>
-
-<p>минут</p>
-
-</div>
-
-<div>
-
-<span id="seconds">00</span>
-
-<p>секунд</p>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-С любовью ❤
-
-Даяна & Андрей
-
-</footer>
-
-<script src="script.js"></script>
-
+  <!-- Главный экран: фото как фон, без картинки внутри -->
+  <section class="hero" style="background: url('images/main.png') center/cover no-repeat; height: 100vh;">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>
+        Даяна
+        <span>&</span>
+        Андрей
+      </h1>
+      <p class="invite">
+        Дорогие друзья!<br>
+        Приглашаем вас разделить с нами<br>
+        этот особенный день.
+      </p>
+      <!-- Кнопка «Подробнее» удалена -->
+    </div>
+  </section>
+
+  <section id="info" class="info">
+    <h2>Дата</h2>
+    <p class="date">18 июля 2026 года</p>
+    <h2>Время</h2>
+    <p class="time">15:00</p>
+  </section>
+
+  <section class="location">
+    <h2>Место проведения</h2>
+    <p>
+      Свердловская область<br>
+      г. Екатеринбург<br>
+      ДНП «Аэродром»<br>
+      Блестящая улица
+    </p>
+    <!-- Исправленная ссылка на построение маршрута -->
+    <a target="_blank" class="button"
+       href="https://yandex.ru/maps/?rtext=~53.507852,49.420415&rtt=auto">
+      Построить маршрут
+    </a>
+  </section>
+
+  <section class="wishes">
+    <h2>Пожелания</h2>
+    <p>
+      Если хотите подарить нам ценный и нужный подарок,<br>
+      мы будем очень благодарны за вклад<br>
+      в бюджет нашей молодой семьи.
+    </p>
+  </section>
+
+  <section class="flowers">
+    <h2>Вместо цветов</h2>
+    <p>
+      Просим не обременять себя выбором цветов —<br>
+      ваше присутствие скрасит этот день<br>
+      ярче любых букетов!
+    </p>
+  </section>
+
+  <!-- Секция с таймером удалена полностью -->
+
+  <footer>
+    С любовью ❤<br>
+    Даяна & Андрей
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

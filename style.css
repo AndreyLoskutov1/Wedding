@@ -1,371 +1,191 @@
 /* ==========================
       ОБЩИЕ НАСТРОЙКИ
 ========================== */
-
-*
-{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-
-background:#F8F2EA;
-
-font-family:'Cormorant Garamond',serif;
-
-color:#7b4b42;
-
-line-height:1.7;
-
-overflow-x:hidden;
-
+body {
+  background: #F8F2EA;
+  font-family: 'Cormorant Garamond', serif;
+  color: #7b4b42;
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 
 /* ==========================
       ГЛАВНЫЙ ЭКРАН
 ========================== */
-
-.hero{
-
-min-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-padding:40px 20px;
-
-position:relative;
-
+.hero {
+  /* min-height: 100vh; теперь задан инлайново, оставлен для подстраховки */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  position: relative;
 }
 
-.hero-content{
-
-max-width:500px;
-
-text-align:center;
-
-z-index:2;
-
+.hero-content {
+  max-width: 500px;
+  text-align: center;
+  z-index: 2;
 }
 
-.main-photo{
+/* .main-photo удалён – теперь фото задано фоном */
 
-width:100%;
-
-max-width:420px;
-
-display:block;
-
-margin:auto;
-
-border-radius:30px;
-
-box-shadow:
-
-0 20px 60px rgba(0,0,0,.15);
-
-animation:fade 1.8s;
-
+h1 {
+  font-family: 'Marck Script', cursive;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-top: 30px;
+  color: #A44E43;
 }
 
-h1{
-
-font-family:'Marck Script',cursive;
-
-font-size:72px;
-
-font-weight:400;
-
-line-height:1.1;
-
-margin-top:30px;
-
-color:#A44E43;
-
+h1 span {
+  display: block;
+  font-size: 50px;
+  margin: 15px 0;
 }
 
-h1 span{
-
-display:block;
-
-font-size:50px;
-
-margin:15px 0;
-
+.invite {
+  font-size: 30px;
+  margin-top: 30px;
+  padding: 0 10px;
 }
 
-.invite{
-
-font-size:30px;
-
-margin-top:30px;
-
-padding:0 10px;
-
+.button {
+  display: inline-block;
+  margin-top: 45px;
+  padding: 16px 40px;
+  background: #B65A4E;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 22px;
+  transition: 0.35s;
 }
 
-.button{
-
-display:inline-block;
-
-margin-top:45px;
-
-padding:16px 40px;
-
-background:#B65A4E;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:50px;
-
-font-size:22px;
-
-transition:.35s;
-
-}
-
-.button:hover{
-
-background:#93453B;
-
-transform:translateY(-4px);
-
+.button:hover {
+  background: #93453B;
+  transform: translateY(-4px);
 }
 
 /* ==========================
         СЕКЦИИ
 ========================== */
-
-section{
-
-padding:90px 25px;
-
-text-align:center;
-
-position:relative;
-
+section {
+  padding: 40px 20px;   /* уменьшено с 90px 25px */
+  text-align: center;
+  position: relative;
 }
 
-h2{
-
-font-family:'Marck Script',cursive;
-
-font-size:54px;
-
-color:#A44E43;
-
-margin-bottom:25px;
-
+h2 {
+  font-family: 'Marck Script', cursive;
+  font-size: 54px;
+  color: #A44E43;
+  margin-bottom: 20px;  /* чуть уменьшено */
 }
 
-.date,.time{
-
-font-size:34px;
-
+.date,
+.time {
+  font-size: 34px;
 }
 
 .location p,
-
 .wishes p,
-
-.flowers p{
-
-font-size:28px;
-
-max-width:700px;
-
-margin:auto;
-
+.flowers p {
+  font-size: 28px;
+  max-width: 700px;
+  margin: auto;
 }
 
 /* ==========================
-      ТАЙМЕР
+      ТАЙМЕР – полное удаление
+   (секция удалена из HTML, стили убраны)
 ========================== */
-
-#timer{
-
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-margin-top:40px;
-
-}
-
-#timer div{
-
-background:white;
-
-padding:25px;
-
-border-radius:25px;
-
-width:120px;
-
-box-shadow:
-
-0 10px 25px rgba(0,0,0,.08);
-
-}
-
-#timer span{
-
-display:block;
-
-font-size:46px;
-
-font-weight:bold;
-
-color:#B65A4E;
-
-}
-
-#timer p{
-
-font-size:20px;
-
-margin-top:8px;
-
-}
 
 /* ==========================
       FOOTER
 ========================== */
-
-footer{
-
-padding:60px 20px;
-
-background:#EEDFD1;
-
-text-align:center;
-
-font-size:30px;
-
+footer {
+  padding: 40px 20px;   /* уменьшено с 60px */
+  background: #EEDFD1;
+  text-align: center;
+  font-size: 30px;
 }
 
 /* ==========================
       АНИМАЦИИ
 ========================== */
-
-@keyframes fade{
-
-from{
-
-opacity:0;
-
-transform:translateY(40px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero,
 .info,
 .location,
 .wishes,
-.flowers,
-.countdown{
-
-animation:fade 1.2s;
-
+.flowers {
+  animation: fade 1.2s;
 }
 
 /* ==========================
       ДЕКОР
 ========================== */
-
-.hero::before{
-
-content:"❤";
-
-position:absolute;
-
-left:8%;
-
-top:8%;
-
-font-size:36px;
-
-opacity:.18;
-
+.hero::before {
+  content: "❤";
+  position: absolute;
+  left: 8%;
+  top: 8%;
+  font-size: 36px;
+  opacity: 0.18;
 }
 
-.hero::after{
-
-content:"❀";
-
-position:absolute;
-
-right:8%;
-
-bottom:10%;
-
-font-size:44px;
-
-opacity:.18;
-
+.hero::after {
+  content: "❀";
+  position: absolute;
+  right: 8%;
+  bottom: 10%;
+  font-size: 44px;
+  opacity: 0.18;
 }
 
-.location::before{
-
-content:"✿";
-
-position:absolute;
-
-left:12%;
-
-top:30px;
-
-font-size:32px;
-
-opacity:.25;
-
+.location::before {
+  content: "✿";
+  position: absolute;
+  left: 12%;
+  top: 30px;
+  font-size: 32px;
+  opacity: 0.25;
 }
 
-.wishes::after{
-
-content:"♡";
-
-position:absolute;
-
-right:10%;
-
-bottom:30px;
-
-font-size:40px;
-
-opacity:.18;
-
+.wishes::after {
+  content: "♡";
+  position: absolute;
+  right: 10%;
+  bottom: 30px;
+  font-size: 40px;
+  opacity: 0.18;
 }
 
 /* ==========================
       АДАПТИВ
 ========================== */
-
 @media (max-width: 768px) {
   h1 {
     font-size: 58px;
@@ -388,15 +208,6 @@ opacity:.18;
   .date,
   .time {
     font-size: 28px;
-  }
-
-  #timer div {
-    width: 90px;
-    padding: 18px;
-  }
-
-  #timer span {
-    font-size: 34px;
   }
 
   .button {
